@@ -6,10 +6,16 @@
     I tried to do this in external css but it still did not override the styles, instead for more holistic styles I will be using internal css
     and external css to target very specific classes in the HTML code*/
   
+    /*
+    .nav-link {
+        color: black;
+    }
+    
+    This still isn't working when I use specific classes */
 
   
-  
-  
+   
+    
   
   
   
