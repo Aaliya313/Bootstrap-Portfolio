@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <title>Bootstrap-Portfolio</title>
 </head>
+
+<!--Using Internal CSS as external CSS is not overriding bootstrap styles-->
+<style>
+   * {
+    font-family: 'Raleway';
+    }
+</style>
 
 <body>
     <!--NAVBAR-->
@@ -38,8 +46,7 @@
     <!--END OF NAVBAR-->
 
     <!--HERO-->
-    <div class="p-4 shadow-4" 
-    style="
+    <div class="p-4 shadow-4" style="
     /*background-image: url('images\herobcg.jpg');*/
     background-color: hsl(204, 95%, 22%); 
     color:white;
@@ -52,8 +59,8 @@
 
         <hr class="my-4" />
 
-        <img src="images\hijabiAvatar.jpg" alt="Avatar of me" width="200px" height="200px"/>
-            
+        <img src="images\hijabiAvatar.jpg" alt="Avatar of me" width="200px" height="200px" />
+
     </div>
     <!-- END OF HERO -->
 
@@ -62,12 +69,116 @@
         <section class="aboutMe">
             <div class="AboutMe" id="about">
                 <h3>About Me</h3>
+                <h5>Degree: <br>
+                    Certifications: <br>
+                    Why Software Development?
+                    <p> Lorem ipsum dolor sit amet. Et sequi inventore eum ipsum architecto non saepe adipisci et
+                        eligendi minima.
+                        Et consequatur dolor cum magni rerum ut galisum velit ut provident voluptatibus sit error minus
+                        ab sint
+                        natus. Qui magni sunt non perspiciatis aperiam ab itaque molestias vel sunt ipsum sit adipisci
+                        illo est
+                        ullam dignissimos.</p>
+                </h5>
             </div>
         </section>
 
         <section class="myProjects">
             <div class="Projects" id="projects">
                 <h3>Projects</h3>
+            </div>
+            <div class="container"> <!--Bootstrap grid-->
+                <div class="row align-items-start">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;"> <!--Bootstrap cards-->
+                            <img class="card-img-top" src="https://placehold.co/400" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Random Number Generator</h5>
+                                <p class="card-text">A random number Generator made in HTML, CSS and JavaScript and
+                                    deployed
+                                    on GitHub pages. Please find the link to the deployed application below.
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <a href="https://aaliya313.github.io/Module-5-Homework-Password-Generator-Challenge/"
+                                    class="card-link">Deployed Application link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://placehold.co/400" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://placehold.co/400" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://placehold.co/400" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://placehold.co/400" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="https://placehold.co/400" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -76,8 +187,10 @@
                 <h3>Contact Me</h3>
             </div>
         </section>
+
+
     </main>
-<!--END OF MAIN SECTION-->
+    <!--END OF MAIN SECTION-->
 
 </body>
 
