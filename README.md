@@ -15,7 +15,7 @@ Bootstrap 5.3.0
 ## Deployed Application Link
 
 ## Screenshot of deployed application 
-![Screenshot of Bootstrap portfolio](images/ScreenshotModule3hwk.pngimages)
+![Screenshot of Bootstrap portfolio](./images/ScreenshotModule3hwk.png)
 
 
 ## Credits 
