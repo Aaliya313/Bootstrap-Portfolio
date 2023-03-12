@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> <!--Bootstrap 4.6.2-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link href="stylesheet" type="text/css" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!--Bootstrap 5.3.0-->
+    <link href="stylesheet" type="text/css" href="style.css" /> <!--Css linked after bootstrap for higher priority-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'> <!--Importing a nicer font-->
     <title>Bootstrap-Portfolio</title>
 </head>
 
 <!--Using Internal CSS as external CSS is not overriding bootstrap styles-->
 <style>
     * {
-        font-family: 'Raleway' !important;
+        font-family: 'Raleway' !important; /*Overriding all styles*/
 
     }
 
@@ -29,11 +29,11 @@
     #contact,
     #projects,
     .footer {
-        padding: 2em;
+        padding: 2em; /*Adding some distance away from the side of the screen for better readability*/
     }
 
 
-    #contact li {
+    #contact li { /*Styling the list*/
         list-style-type: none;
         display: flex;
         align-items: center;
@@ -41,16 +41,16 @@
         justify-content: space-evenly;
     }
 
-    #contact li a {
+    #contact li a { /*Styling the list*/
         color: black;
     }
 
-    #contact li a:hover {
+    #contact li a:hover { /*Styling the list with a hover and box-shadow effect*/
         color: red;
-        box-shadow: 5px 5px #222;
+        box-shadow: 5px 5px #222; /*Box-shadow is grey*/
     }
 
-    .footer {
+    .footer { /*Styling the list and footer*/
         background-color: hsl(204, 95%, 22%);
         list-style-type: none;
         display: flex;
@@ -59,13 +59,13 @@
         justify-content: space-evenly;
     }
 
-    .footer li a {
-        color: black;
+    .footer li a { /*Styling the list*/
+        color: white;
     }
 
-    .footer li a:hover {
+    .footer li a:hover {  /*Styling the list with a hover and box-shadow effect*/
         color: red;
-        box-shadow: 5px 5px #222;
+        box-shadow: 5px 5px #222; /*Box-shadow is grey*/
     }
 </style>
 
@@ -85,7 +85,7 @@
                             class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects" style="color:black; font-size:larger;">Projects</a>
+                    <a class="nav-link" href="#projects" style="color:black; font-size:larger;">Projects</a> <!--Links navigated to each part as shown with the #-->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#skills" style="color:black; font-size:larger;">Skills</a>
@@ -100,20 +100,20 @@
     <!--END OF NAVBAR-->
 
     <!--HERO-->
-    <div class="p-4 shadow-4" style="
+    <div class="p-4 shadow-4" style=" 
     /*background-image: url('images\herobcg.jpg');*/
     background-color: hsl(204, 95%, 22%); 
     color:white;
     display: flex;
     align-items: center;
     justify-content: center;
-    justify-content: space-evenly;">
+    justify-content: space-evenly;"> <!--Had to use inline css as internal and external css did not work-->
         <h2>Aaliya Ladha<br>
             This is my Bootstrap Portfolio.</h2>
 
         <hr class="my-4" />
 
-        <img src="images\hijabiAvatar.jpg" alt="Avatar of me" width="200px" height="200px" />
+        <img src="images\hijabiAvatar.jpg" alt="Avatar of me" width="200px" height="200px" /> <!--Avatar-->
 
     </div>
     <!-- END OF HERO -->
@@ -131,29 +131,29 @@
                         <div class="card" style="width: 18rem;"> <!--Bootstrap cards-->
                             <img class="card-img-top" src="https://placehold.co/400" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Random Number Generator</h5>
+                                <h5 class="card-title">Random Number Generator</h5> <!--Title for the project-->
                                 <p class="card-text">Made in HTML, CSS and JavaScript and
                                     deployed on GitHub pages.
-                                </p>
+                                </p> <!--Info about the project-->
                             </div>
                             <div class="card-body">
                                 <a href="https://aaliya313.github.io/Module-5-Homework-Password-Generator-Challenge/"
-                                    class="card-link">Deployed Application link</a>
+                                    class="card-link">Deployed Application link</a> <!--Deployed application link-->
                             </div>
                         </div>
                     </div>
-
+                    <!--As I make more projects, I will add them, at the moment this is part is not filled in due to this reason-->
                     <div class="col">
                         <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="https://placehold.co/400" alt="Card image cap">
+                            <img class="card-img-top" src="https://placehold.co/400" alt="Card image cap"> <!--Using placeholder images for now-->
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">Card title</h5> <!--Will add a title when appropriate-->
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk.
-                                    of the card's content.</p>
+                                    of the card's content.</p> <!--Will add info when appropriate-->
                             </div>
                             <div class="card-body">
-                                <a href="#" class="card-link">Another link</a>
+                                <a href="#" class="card-link">Another link</a> <!--Will add a link when appropriate-->
                             </div>
                         </div>
                     </div>
@@ -219,7 +219,7 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills"> <!--Skills section-->
             <div class="skills" id="skills">
                 <h3>Skills</h3>
                 <ul>
@@ -234,11 +234,11 @@
             </div>
         </section>
 
-        <section class="contactMe">
+        <section class="contactMe"> <!--Contact me section-->
             <div class="ContactMe" id="contact">
                 <h3>Contact Me</h3>
-                <div class="AboutMe" id="about">
-                    <h5>About Me</h5>
+                <div class="AboutMe" id="about"> <!--About me section in contact section-->
+                    <h5>About Me</h5> <!--Will fill in at a later date-->
                     <h6>Degree: <br>
                         Certifications: <br>
                         Why Software Development?
@@ -249,7 +249,7 @@
                     </h6>
                 </div>
                 <ul>
-                    <li><a href="exampleemail@outlook.com">Email</a></li>
+                    <li><a href="exampleemail@outlook.com">Email</a></li> <!--Working links to social media and ways to contact me-->
                     <li><a href="https://LinkedIn.com">LinkedIn</a></li>
                     <li><a href="https://instagram.com">Instagram</a></li>
                 </ul>
@@ -260,9 +260,9 @@
 </body>
 
 <!--FOOTER-->
-<footer class="footer">
-    <li><a href="#navbar">Home</a></li>
-    <li><a href="#projects">Projects</a></li>
+<footer class="footer"> <!--footer section-->
+    <li><a href="#navbar">Home</a></li> <!--Did not include <ul> here as I couldn't remove the bullet points even when I styled it (list-style-type:none;)-->
+    <li><a href="#projects">Projects</a></li> <!--# goes back to the relevant section when clicked on-->
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact Me</a></li>
 </footer>
