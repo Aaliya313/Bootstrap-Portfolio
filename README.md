@@ -3,7 +3,8 @@
 ## Title
 edX Bootcamp Module 3 Homework: UX and Advanced CSS: Bootstrap Portfolio
 
-## Creating a bootstrap professional portfolio.
+## Description of project
+Creating a bootstrap professional portfolio.
 
 ## Tools used:
 HTML,
